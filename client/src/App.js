@@ -2,9 +2,10 @@ import "./App.css";
 import React, { useState, useEffect } from "react";
 import socket from "./serverConnection";
 import ChatWrapper from "../src/components/chat/ChatWrapper";
-import ChatHeader from "./components/chat/ChatHeader";
-import ChatBody from "./components/chat/ChatBody";
-import ChatFooter from "../src/components/chat/ChatFooter";
+import UserInfo from "./components/chat/UserInfo";
+import Messages from "./components/chat/Messages";
+import UserList from "../src/components/chat/UserList";
+import "../src/assest/chat/scss/chat.scss";
 
 function App() {
   const [botTyping, setBotTyping] = useState();
@@ -51,9 +52,14 @@ function App() {
 
   return (
     <ChatWrapper>
-      <ChatHeader />
-      <ChatBody messages={messages} botTyping={botTyping} />
-      <ChatFooter sendMessage={sendMessage} setMessage={setMessage}/>
+      <UserList />
+      <Messages
+        messages={messages}
+        botTyping={botTyping}
+        setMessage={setMessage}
+        sendMessage={sendMessage}
+      />
+      <UserInfo />
     </ChatWrapper>
   );
 }

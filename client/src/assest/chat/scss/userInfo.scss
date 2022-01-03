@@ -1,0 +1,84 @@
+.user-info {
+    width: 100%;
+    max-width: 400px;
+    transition: width 0.5s ease-in-out;
+    border-left: 1px solid #E4EDEF;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    .user-images{
+        background:#1E2532;
+        height:218px;
+        display: flex;
+        align-items: center;
+        .images{
+            width:100%;
+             text-align: center;
+        }
+    }
+    .info{     padding: 40px; border-bottom: 1px solid #E8E8E8;
+        .item{
+            .title{font-weight:500; font-size:14px; color:#8B8B8B;}
+            .text{ font-size:16px; color:000000; font-weight: 500;}
+            .labels{
+                .labelItem{
+                    float: left;
+                    margin-right: 10px;
+                    background: #A3B8E0;
+                    color: #fff;
+                    padding: 5px 12px;
+                    border-radius: 10px;
+                    font-size: 16px;
+                    i{
+                        font-size: 12px;
+                        float: right;
+                        margin-left: 10px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .info.labels{
+        padding: 20px 40px;
+    }
+    .info.list{
+        border-bottom:0;
+        .list-item{
+            &:after{
+                content: "";
+                display: block;
+                width: 10px;
+                height: 10px;
+                background: #A3B8E0;
+                float: left;
+                margin-top: 4px;
+                border-radius: 40px;
+                margin-right: 7px;
+            }
+            font-size:16px; font-weight:600;
+            color:#000000;
+        }
+        a {
+            font-size: 16px;
+            font-weight: 500;
+            color: #53A6FA;
+            text-decoration: none;
+            display: block;
+            margin-top: 20px;
+        }
+      
+    }
+    .info.react{
+        .text{
+            background: #FA8299;
+            height: 42px;
+            color: #fff;
+            border-radius: 60px;
+            text-align: center;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 42px;
+        } 
+    }
+}

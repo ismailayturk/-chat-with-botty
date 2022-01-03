@@ -1,0 +1,82 @@
+.userList {
+  width: 25%;
+  height:100%;
+  .header {
+    height: 100px;
+    background: #fff;
+    color: #8b8b8b;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    border-bottom: 1px solid #e8e8e8;
+
+    .text {
+      font-size: 17px;
+      i {
+        font-size: 14px;
+        margin-left: 7px;
+      }
+    }
+
+    i {
+      font-size: 25px;
+      margin-left: auto;
+    }
+  }
+  .userLastMessages {
+    height: calc(100% - 101px);
+    overflow-y: scroll;
+    .item {
+      padding: 0 25px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      border-bottom:1px solid #E8E8E8;
+      .profile-icon {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        text-align: center;
+        border-radius: 50px;
+        background: #fff;
+        line-height: 52px;
+        font-weight: 500;
+        font-size:22px;
+        color:#fff;
+        img {
+          width: 30px;
+    margin-top: 11px;
+        }
+      }
+      .info{
+        width:calc(100% - 70px);
+        position: relative;
+        .text {
+          font-size: 13px;
+          color: #8b8b8b;
+          font-weight: 400;
+        }
+        .last-seen{
+          font-size: 13px;
+          padding: 0 10px;
+          position: absolute;
+          right: 0;
+          top: 0;
+          height: 22px;
+          line-height: 22px;
+          color: #8B8B8B;
+          border-radius: 20px;
+          font-weight: 400;
+        }
+        .last-seen.online{
+          background: #16C607;
+          color: #fff;
+        }
+      }
+    }
+    .item.active{
+      background: #ededed;
+    }
+  
+  }
+}

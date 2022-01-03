@@ -2,11 +2,9 @@ import React from "react";
 
 function ChatWrapper(props) {
   return (
-    <div className="container">
-        <div className="col-md-12 mt-5 chat">
+    <div className="chatWrapper">
         {props.children}
       </div>
-    </div>
   );
 }
 
